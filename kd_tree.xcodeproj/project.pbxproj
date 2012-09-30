@@ -6,8 +6,33 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5A0734161617C22A00CAD827 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A0734071617C22A00CAD827 /* main.c */; };
+		5A0734171617C22A00CAD827 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 5A0734081617C22A00CAD827 /* makefile */; };
+		5A0734181617C22A00CAD827 /* kdtree.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A07340D1617C22A00CAD827 /* kdtree.h */; };
+		5A0734191617C22A00CAD827 /* vector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A07340E1617C22A00CAD827 /* vector.h */; };
+		5A07341A1617C22A00CAD827 /* dfn.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A07340F1617C22A00CAD827 /* dfn.h */; };
+		5A07341B1617C22A00CAD827 /* vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A0734101617C22A00CAD827 /* vector.c */; };
+		5A07341C1617C22A00CAD827 /* kdtree.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A0734111617C22A00CAD827 /* kdtree.c */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5A0734001617C1E400CAD827 /* libkd_tree.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libkd_tree.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0734071617C22A00CAD827 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = "../15826 Homework/HW1/kdtree/main.c"; sourceTree = "<group>"; };
+		5A0734081617C22A00CAD827 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = makefile; path = "../15826 Homework/HW1/kdtree/makefile"; sourceTree = "<group>"; };
+		5A0734091617C22A00CAD827 /* hw1_3.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hw1_3.script; path = "../15826 Homework/HW1/kdtree/hw1_3.script"; sourceTree = "<group>"; };
+		5A07340A1617C22A00CAD827 /* hw1_2.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hw1_2.script; path = "../15826 Homework/HW1/kdtree/hw1_2.script"; sourceTree = "<group>"; };
+		5A07340B1617C22A00CAD827 /* hw1_1.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hw1_1.script; path = "../15826 Homework/HW1/kdtree/hw1_1.script"; sourceTree = "<group>"; };
+		5A07340C1617C22A00CAD827 /* hw1.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hw1.script; path = "../15826 Homework/HW1/kdtree/hw1.script"; sourceTree = "<group>"; };
+		5A07340D1617C22A00CAD827 /* kdtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kdtree.h; path = "../15826 Homework/HW1/kdtree/kdtree.h"; sourceTree = "<group>"; };
+		5A07340E1617C22A00CAD827 /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vector.h; path = "../15826 Homework/HW1/kdtree/vector.h"; sourceTree = "<group>"; };
+		5A07340F1617C22A00CAD827 /* dfn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dfn.h; path = "../15826 Homework/HW1/kdtree/dfn.h"; sourceTree = "<group>"; };
+		5A0734101617C22A00CAD827 /* vector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vector.c; path = "../15826 Homework/HW1/kdtree/vector.c"; sourceTree = "<group>"; };
+		5A0734111617C22A00CAD827 /* kdtree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kdtree.c; path = "../15826 Homework/HW1/kdtree/kdtree.c"; sourceTree = "<group>"; };
+		5A0734121617C22A00CAD827 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = "../15826 Homework/HW1/kdtree/README"; sourceTree = "<group>"; };
+		5A0734131617C22A00CAD827 /* COPYRIGHT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = COPYRIGHT; path = "../15826 Homework/HW1/kdtree/COPYRIGHT"; sourceTree = "<group>"; };
+		5A0734141617C22A00CAD827 /* inp-large.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "inp-large.script"; path = "../15826 Homework/HW1/kdtree/inp-large.script"; sourceTree = "<group>"; };
+		5A0734151617C22A00CAD827 /* input.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = input.script; path = "../15826 Homework/HW1/kdtree/input.script"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +49,21 @@
 		5A0733F51617C1E400CAD827 = {
 			isa = PBXGroup;
 			children = (
+				5A0734071617C22A00CAD827 /* main.c */,
+				5A0734081617C22A00CAD827 /* makefile */,
+				5A0734091617C22A00CAD827 /* hw1_3.script */,
+				5A07340A1617C22A00CAD827 /* hw1_2.script */,
+				5A07340B1617C22A00CAD827 /* hw1_1.script */,
+				5A07340C1617C22A00CAD827 /* hw1.script */,
+				5A07340D1617C22A00CAD827 /* kdtree.h */,
+				5A07340E1617C22A00CAD827 /* vector.h */,
+				5A07340F1617C22A00CAD827 /* dfn.h */,
+				5A0734101617C22A00CAD827 /* vector.c */,
+				5A0734111617C22A00CAD827 /* kdtree.c */,
+				5A0734121617C22A00CAD827 /* README */,
+				5A0734131617C22A00CAD827 /* COPYRIGHT */,
+				5A0734141617C22A00CAD827 /* inp-large.script */,
+				5A0734151617C22A00CAD827 /* input.script */,
 				5A0734011617C1E400CAD827 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +83,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0734181617C22A00CAD827 /* kdtree.h in Headers */,
+				5A0734191617C22A00CAD827 /* vector.h in Headers */,
+				5A07341A1617C22A00CAD827 /* dfn.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0734161617C22A00CAD827 /* main.c in Sources */,
+				5A0734171617C22A00CAD827 /* makefile in Sources */,
+				5A07341B1617C22A00CAD827 /* vector.c in Sources */,
+				5A07341C1617C22A00CAD827 /* kdtree.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
