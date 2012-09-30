@@ -184,6 +184,7 @@ void rrangesearch(TREENODE *subroot, VECTOR *vpLow, VECTOR *vpHigh, int level){
     return;
 }
 
+
 /* returns TRUE if the interval contains the vp point */
 /* The interval is CLOSED, ie it contains its endpoints */
 
@@ -203,3 +204,50 @@ BOOLEAN contains( VECTOR *vpLow, VECTOR *vpHigh, VECTOR *vp){
     return(res);
 
 }
+
+
+/*update bounding boxes*/
+void update(VECTOR *vp,VECTOR *vpLow, VECTOR *vpHigh)
+{
+    int numdims;
+    numdims = vp->len;
+    
+    int i;
+    for(i=0;i<numdims;i++){
+        if(vp->vec[i] < vpLow->vec[i]){
+            vpLow -> vec[i] = vp->vec[i];
+        }
+        if(vp->vec[i] > vpHigh->vec[i]){
+            vpHigh -> vec[i] = vp->vec[i];
+        }
+    }
+}
+
+
+/*traverse the whole tree*/
+void traverse(TREENODE *subroot, VECTOR *vpLow, VECTOR *vpHigh)
+{
+    if(subroot==NULL){
+        return;
+    }
+    update(subroot->pvec,vpLow,vpHigh);
+    traverse(subroot->left, vpLow, vpHigh);
+    traverse(subroot->right, vpLow, vpHigh);
+}
+
+void minimum_bounding_box(TREENODE *subroot)
+{
+    if(subroot==NULL) return;
+    
+    VECTOR *vpLow;
+    VECTOR *vpHigh;
+    
+    vpLow = veccopy(subroot->pvec);
+    vpHigh = veccopy(subroot->pvec);
+    traverse(subroot, vpLow, vpHigh);
+    
+    
+    vecprint(vpLow);
+    vecprint(vpHigh);
+}
+

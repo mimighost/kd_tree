@@ -37,8 +37,12 @@
   void rangesearch(TREENODE *subroot, VECTOR *vpLow, VECTOR *vpHigh);
   void rrangesearch(TREENODE *subroot, VECTOR *vpLow, VECTOR *vpHigh, int level);
 
+
    BOOLEAN contains( VECTOR *vpLow, VECTOR *vpHigh, VECTOR *vp);
 
    NUMBER myvecdist2( VECTOR *vp1, VECTOR *vp2);
+
+void traverse(TREENODE *subroot, VECTOR *vpLow, VECTOR *vpHigh);
+void update(VECTOR *vp,VECTOR *vpLow, VECTOR *vpHigh);
 
 #endif

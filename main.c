@@ -195,7 +195,8 @@ char *argv[];
 	   break;
 	   
 	   case 'b':		 /* Minimum bounding box. Insert HW1 code here */
-	       printf("Algorithm not implemented ...\n");
+	       //printf("Algorithm not implemented ...\n");
+            minimum_bounding_box(root);
 	   break;
 
 	   case 'x':		 /* exit */
